@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  silabs:
+    #image: galileo/silabs
+    build: 
+      context: .
+    devices:
+      - $DEVICE:/dev/ttyACM0
